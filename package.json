@@ -10,9 +10,8 @@
     "start:watch": "nodemon server.js"
   },
   "jest": {
-    "testEnvironment": "node",
-    "globalSetup": "alchemy-jest-slack-reporter/setup.js",
-    "globalTeardown": "alchemy-jest-slack-reporter/teardown.js"
+    "testEnvironment": "node",    "testTimeout": 10000,
+    "preset": "jest-puppeteer"
   },
   "keywords": [],
   "author": "",
